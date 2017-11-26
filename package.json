@@ -2,7 +2,7 @@
   "name": "shellectric-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "A retro, low-contrast dark theme.",
+  "description": "Easy on the eyes, retro colors inspired by 70's design.",
   "keywords": [
     "syntax",
     "theme",
@@ -10,7 +10,7 @@
     "low-contrast",
     "dark"
   ],
-  "repository": "https://github.com/atom/shellectric-syntax",
+  "repository": "https://github.com/fonsecapeter/shellectric-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
