@@ -153,12 +153,12 @@ atom-text-editor {
     }
 
     &.syntax--bold {
-      color: @light-gray;
+      color: @light-blue-gray;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @orange;
       font-style: italic;
     }
   }
@@ -252,24 +252,19 @@ atom-text-editor {
   color: @light-blue;
 }
 
-.syntax--source.syntax--gfm .syntax--markup {
-  &.syntax--link {
-    color: @blue;
-  }
-
-  &.syntax--raw {
-    color: @purple;
-  }
-
-  &.syntax--strike {
-    color: @orange;
-  }
-}
-
 .syntax--markup {
+  &.syntax--link {
+    .syntax--string {
+      color: @blue;
+    }
+  }
+
   &.syntax--bold {
-    color: @gray;
+    color: @light-blue-gray;
     font-weight: bold;
+    .syntax--punctuation {
+      color: @gray;
+    }
   }
 
   &.syntax--changed {
@@ -281,12 +276,18 @@ atom-text-editor {
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @orange;
     font-style: italic;
+    .syntax--punctuation {
+      color: @gray;
+    }
   }
 
   &.syntax--heading {
-    color: @light-gray;
+    color: @light-blue-gray;
+    .syntax--punctuation {
+      color: @gray;
+    }
   }
 
   &.syntax--inserted {
@@ -301,8 +302,31 @@ atom-text-editor {
     color: @red;
   }
 
-  &.syntax--raw.syntax--inline {
-    color: @purple;
+  &.syntax--raw {
+    &, .syntax--punctuation {
+      color: @light-purple;
+    }
+  }
+
+  &.syntax--strike {
+    color: @gray;
+    .syntax--punctuation {
+      color: @gray;
+    }
+  }
+
+  &.syntax--completed.syntax--task.syntax--ordered.syntax--list {
+    color: @green;
+    .syntax--punctuation {
+      color: @light-green;
+    }
+  }
+
+  &.syntax--completed.syntax--task.syntax--unordered.syntax--list {
+    color: @green;
+    .syntax--punctuation {
+      color: @light-green;
+    }
   }
 }
 
